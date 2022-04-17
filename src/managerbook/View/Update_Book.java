@@ -11,6 +11,7 @@ import javax.swing.table.DefaultTableModel;
 public class Update_Book extends javax.swing.JFrame {
     Service services;
     DefaultTableModel defaultTableModel;
+    String b = "chung ta co gang nao";
     
     public Update_Book() {
         initComponents();
