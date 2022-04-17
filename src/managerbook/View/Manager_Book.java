@@ -1,11 +1,8 @@
 package managerbook.View;
 
-import java.sql.SQLException;
+import java.util.*;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import java.util.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import managerbook.Modle.Book;
 import managerbook.Services.Service;
 public class Manager_Book extends javax.swing.JFrame {

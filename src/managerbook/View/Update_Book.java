@@ -197,7 +197,9 @@ public class Update_Book extends javax.swing.JFrame {
     }//GEN-LAST:event_id_jComboBoxActionPerformed
 
     private void exit_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exit_btnActionPerformed
-        System.exit(0);
+        Manager_Book mn = new Manager_Book();
+        mn.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_exit_btnActionPerformed
 
     private void save_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_save_btnActionPerformed

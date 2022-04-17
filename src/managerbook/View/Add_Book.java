@@ -56,6 +56,11 @@ public class Add_Book extends javax.swing.JFrame {
         });
 
         price_TextField.setFont(new java.awt.Font("Harrington", 0, 14)); // NOI18N
+        price_TextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                price_TextFieldActionPerformed(evt);
+            }
+        });
 
         save_btn.setFont(new java.awt.Font("Harrington", 1, 14)); // NOI18N
         save_btn.setText("SAVE");
@@ -157,8 +162,10 @@ public class Add_Book extends javax.swing.JFrame {
             sb.append("Title cannot be empty");
         if(price_TextField.getText().equals(""))
             sb.append("\nTitle cannot be empty");
-        if(sb.length() > 0)
+        if(sb.length() > 0){
             JOptionPane.showMessageDialog(this, sb.toString(),"Error",JOptionPane.ERROR_MESSAGE);
+            return;
+        }
         else{
             if(isNumeric(price_TextField.getText())== false)
                 JOptionPane.showMessageDialog(this,"Price must be number","Error",JOptionPane.ERROR_MESSAGE);
@@ -177,6 +184,10 @@ public class Add_Book extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_save_btnActionPerformed
+
+    private void price_TextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_price_TextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_price_TextFieldActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
