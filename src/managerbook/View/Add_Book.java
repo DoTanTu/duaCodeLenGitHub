@@ -7,6 +7,7 @@ import managerbook.Services.Service;
 
 public class Add_Book extends javax.swing.JFrame {
     String a ="ta se day m len duoc thoi";
+    String b = "co thang tan phu";
     Book bookk = new Book();
     Service services = new Service();
     
