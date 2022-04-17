@@ -9,7 +9,7 @@ public class Add_Book extends javax.swing.JFrame {
 
     Book bookk = new Book();
     Service services = new Service();
-    
+    //thang quin tuan nhu cai dau bui
     public Add_Book() {
         initComponents();
         setLocationRelativeTo(null);
